@@ -139,7 +139,7 @@ extension ABIDecoder {
                             subpointer = subpointer + consumedUnwrapped
                         }
                         else {
-                            subpointer = consumedUnwrapped // need to go by nextElementPointer
+                            subpointer += consumedUnwrapped // need to go by nextElementPointer
                         }
                     }
                     return (toReturn as AnyObject, nextElementPointer)
